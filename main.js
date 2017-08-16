@@ -18,7 +18,7 @@
 
 'use strict';
 
-const api = "http://api.soundcloud.com/tracks";
+const api = "https://api.soundcloud.com/tracks";
 const clientId = "?client_id=095fe1dcd09eb3d0e1d3d89c76f5618f";
 
 var nowPlaying = document.querySelector('now-playing');
@@ -62,7 +62,7 @@ function getMusic(artist) {
             }
         });
     }, function(err) {
-    
+
     console.log(err);
     });
 }
